@@ -17,17 +17,23 @@ body {
 }
 
 #typedtext {
-  font-size: 30px;
+  font-size: 3rem;
   margin: 10px 50px;
   letter-spacing: 6px;
   font-weight: bold;
   color: white;
+  height: 30vh;
 }
 
 #typedtext span {
   color: gold;
 }
 
+@media (max-width: 450px) {
+  #typedtext {
+    font-size: 2rem;
+  }
+}
 .aboutUs {
   height: 100vh;
   background: url(../assets/ondas.svg) white bottom center no-repeat;
@@ -43,7 +49,7 @@ body {
   background-size: contain;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .aboutUs__img {
     min-height: 200px;
   }

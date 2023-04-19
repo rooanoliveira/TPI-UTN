@@ -11,12 +11,18 @@
 }
 #typedtext {
     // font-family: 'Waiting for the Sunrise', cursive; 
-    font-size:30px; 
+    font-size:3rem; 
     margin: 10px 50px; 
     letter-spacing: 6px; 
     font-weight: bold;
     color: white;
+    height: 30vh;
 }
 #typedtext span {
     color: gold;
+}
+@media (max-width: 450px) {
+    #typedtext {
+        font-size: 2rem;
+    }
 }
