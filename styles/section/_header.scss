@@ -1,0 +1,22 @@
+.header {
+    background: url(../assets/header-background.jpg) top center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-link a {
+    font-size: 20px;
+}
+#typedtext {
+    // font-family: 'Waiting for the Sunrise', cursive; 
+    font-size:30px; 
+    margin: 10px 50px; 
+    letter-spacing: 6px; 
+    font-weight: bold;
+    color: white;
+}
+#typedtext span {
+    color: gold;
+}
