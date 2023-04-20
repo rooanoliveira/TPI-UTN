@@ -3,6 +3,12 @@
     background-size: cover;
     height: 100vh;
 }
+.navbar-brand {
+    background: url(../assets/Logo_Mente_En_Calma_Blanco.png) center center no-repeat;
+    background-size: contain;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+}
 .navbar-nav {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -18,11 +24,19 @@
     color: white;
     height: 30vh;
 }
-#typedtext span {
-    color: gold;
-}
-@media (max-width: 450px) {
+@media (max-width: 767px) {
     #typedtext {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    .navbar {
+        position: absolute;
+    }
+    .navbar-nav {
+        background-color: rgba(0, 0, 0, .9);
+    }
+}
+@media (max-width: 376px) {
+    .navbar-brand {
+        width: 150px;
     }
 }

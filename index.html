@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     
     <link rel="stylesheet" href="styles/styles.css">
     <title>Home - Mente en Calma</title>
@@ -14,9 +17,7 @@
     <div class="header d-flex flex-column">
         <nav class="navbar navbar-expand-md navbar-dark sticky-top col-12">
           <div class="container">
-            <a class="navbar-brand" href="#">
-              <img src="assets/Logo_Mente_En_Calma_Blanco.png" alt="Mente en Calma" width="250" height="250">
-            </a>
+            <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,25 +38,109 @@
         </nav>
         <div class="header__text container col-12 d-flex justify-content-center align-items-center m-auto">
             <div id="typedtext" class="main__text"></div>
-        <script src="app.js"></script>
+        <script src="js/typewriter.js"></script>
         </div>
     </div>
-      <div class="aboutUs d-flex justify-content-center align-items-center">
+      <div class="aboutUs d-flex justify-content-evenly align-items-center">
         <div class="row container">
-            <div class="aboutUs_title my-3 p-3">
+            <div class="aboutUs_title my-3">
                 <h1>Quienes Somos</h1>
             </div>
-            <div class="aboutUs__img mx-auto my-3 p-3"></div>
-            <div class="aboutUs__text mx-auto my-3 p-3">
+            <div class="aboutUs__img mx-auto my-3"></div>
+            <div class="aboutUs__text mx-auto my-3">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure expedita repellendus laborum totam ipsa neque velit eligendi ipsam. Rem similique odit, voluptas sequi totam suscipit quo quae fuga tempore?
-                    Hic perferendis sint sequi iste soluta aperiam voluptates laborum corrupti fugit deserunt recusandae consequuntur assumenda iusto laudantium quisquam quod id aspernatur, quaerat delectus! Quae doloribus dolores officia nisi aspernatur placeat!
-                    Eligendi quibusdam quisquam enim tenetur. Neque, assumenda vitae sed minus error quisquam expedita illum totam, sapiente nesciunt id recusandae dolorum autem aliquid earum laborum ipsa consectetur non optio voluptatem? Error?
-                    Ea incidunt tempora debitis error fuga ratione minus veniam saepe, veritatis nostrum rerum beatae alias architecto iure maiores! Incidunt nam cum eos hic eum sunt facilis et ipsa quaerat facere!
-                    Exercitationem cupiditate officiis magni neque nulla molestias, ea laudantium sit illum minus? Reiciendis incidunt, fugiat porro earum ab illum qui quaerat libero. Modi ab tenetur quisquam, vel eligendi illo culpa!
+                  En <span>Mente en Calma</span>, nuestra filosofía se basa en la creencia de que el bienestar emocional es esencial para una vida plena y satisfactoria. Nos dedicamos a ofrecer clases y herramientas de mindfulness para ayudarte a encontrar la calma interior y la felicidad que necesitas en tu vida diaria.
+                  Nuestros profesores están altamente capacitados y tienen años de experiencia en la práctica del mindfulness y la meditación. Te guiarán en cada paso de tu camino hacia la atención plena y la serenidad interior, ayudándote a encontrar el equilibrio emocional y la paz interior que necesitas para vivir una vida plena y feliz.
                 </p>
             </div>
         </div>
+    </div>
+    <div class="ourTeam d-flex justify-content-evenly align-items-center flex-column">
+      <div class="ourTeam_title my-3">
+        <h1>Nuestro Time</h1>
+    </div>
+      <div class="container__team container-fluid d-flex justify-content-center align-items-center flex-wrap">
+        <div class="card col-sm-12 col-md-4 col-xl-2 m-2 d-flex flex-column justify-content-center align-items-center p-2">
+          <div class="card-img-top d-flex justify-content-center">
+            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png" class="profile__img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">Project Manager</p>
+          </div>
+          <div class="card-body d-flex">
+            <div class="card-link">
+              <a href="#facebook"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+            </div>
+            <div class="card-link">
+              <a href="#instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="card-link">
+              <a href="#linkedin"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4 col-xl-2 m-2 d-flex flex-column justify-content-center align-items-center p-2">
+          <div class="card-img-top d-flex justify-content-center">
+            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png" class="profile__img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">Project Manager</p>
+          </div>
+          <div class="card-body d-flex">
+            <div class="card-link">
+              <a href="#facebook"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+            </div>
+            <div class="card-link">
+              <a href="#instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="card-link">
+              <a href="#linkedin"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4 col-xl-2 m-2 d-flex flex-column justify-content-center align-items-center p-2">
+          <div class="card-img-top d-flex justify-content-center">
+            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png" class="profile__img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">Project Manager</p>
+          </div>
+          <div class="card-body d-flex">
+            <div class="card-link">
+              <a href="#facebook"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+            </div>
+            <div class="card-link">
+              <a href="#instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="card-link">
+              <a href="#linkedin"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4 col-xl-2 m-2 d-flex flex-column justify-content-center align-items-center p-2">
+          <div class="card-img-top d-flex justify-content-center">
+            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png" class="profile__img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">Project Manager</p>
+          </div>
+          <div class="card-body d-flex">
+            <div class="card-link">
+              <a href="#facebook"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+            </div>
+            <div class="card-link">
+              <a href="#instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="card-link">
+              <a href="#linkedin"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 </html>

@@ -1,11 +1,31 @@
-body {
-  background-color: black;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap");
+span {
+  font-weight: bold;
+  color: #63adf2;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #63adf2 !important;
+  border-bottom: 1px solid #63adf2;
+}
+
+h1 {
+  color: #63adf2;
+  font-weight: bold;
 }
 
 .header {
   background: url(../assets/header-background.jpg) top center no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.navbar-brand {
+  background: url(../assets/Logo_Mente_En_Calma_Blanco.png) center center no-repeat;
+  background-size: contain;
+  width: 200px;
+  aspect-ratio: 1/1;
 }
 
 .navbar-nav {
@@ -25,18 +45,24 @@ body {
   height: 30vh;
 }
 
-#typedtext span {
-  color: gold;
-}
-
-@media (max-width: 450px) {
+@media (max-width: 767px) {
   #typedtext {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .navbar {
+    position: absolute;
+  }
+  .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+@media (max-width: 376px) {
+  .navbar-brand {
+    width: 150px;
   }
 }
 .aboutUs {
-  height: 100vh;
-  background: url(../assets/ondas.svg) white bottom center no-repeat;
+  height: 60vh;
 }
 
 .aboutUs_title {
@@ -49,11 +75,89 @@ body {
   background-size: contain;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
+  .aboutUs {
+    height: 100vh;
+  }
   .aboutUs__img {
-    min-height: 200px;
+    min-height: 300px;
   }
   .aboutUs__text p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 376px) {
+  .aboutUs__img {
+    min-height: 150px;
+  }
+  .aboutUs__text p {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 281px) {
+  .aboutUs__text p {
+    font-size: 0.55rem;
+  }
+}
+.ourTeam {
+  min-height: 40vh;
+  background-color: #f2f2f2;
+}
+.ourTeam .card-title, .ourTeam .card_text {
+  text-align: center;
+}
+.ourTeam .container__team {
+  height: 100%;
+}
+.ourTeam .profile__img {
+  width: 150px;
+  aspect-ratio: 1/1;
+}
+.ourTeam .card-link {
+  font-size: 0.5rem;
+}
+.ourTeam a:hover {
+  border-bottom: none;
+}
+.ourTeam .card {
+  --bs-card-border-color: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+@media (max-width: 768px) {
+  .ourTeam {
+    min-height: 100vh;
+  }
+  .ourTeam .profile__img {
+    width: 100px;
+    aspect-ratio: 1/1;
+  }
+  .ourTeam .card-title {
+    font-size: 1rem;
+  }
+  .ourTeam .card-text {
     font-size: 0.75rem;
+  }
+  .ourTeam .card-link {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 376px) {
+  .ourTeam .profile__img {
+    width: 80px;
+    aspect-ratio: 1/1;
+  }
+  .ourTeam .card-title {
+    font-size: 1rem;
+  }
+  .ourTeam .card-text {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 281px) {
+  .ourTeam .card-link {
+    font-size: 0.3rem;
   }
 }/*# sourceMappingURL=styles.css.map */

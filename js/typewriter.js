@@ -1,7 +1,7 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "En tiempos de locura:", 
-    "<span>INSPIRE</span> y <span>Expire</span>"
+    "Sana tu mente, cuerpo y espíritu", 
+    "¡<span>Mente en Calma</span> te puede ayudar!"
     );
     var iSpeed = 50; // time delay of print out
     var iIndex = 0; // start printing array at this posision
