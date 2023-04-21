@@ -1,22 +1,25 @@
 .aboutUs {
-    height: 60vh;
-    // background: url(../assets/ondas.svg) whitesmoke bottom center no-repeat;
-}
-.aboutUs_title {
-    text-align: center;
-}
-.aboutUs__img {
-    min-height: 300px;
-    background: url(../assets/aboutus.svg) center center no-repeat;
-    background-size: contain;
+    min-height: 100vh;
+    background: url(../assets/ondas.svg) whitesmoke bottom center no-repeat;
+    .aboutUs_title {
+        text-align: center;
+    }
+    .aboutUs__img {
+        min-height: 250px;
+        background: url(../assets/aboutus.svg) center center no-repeat;
+        background-size: contain;
+    }
+    .aboutUs__text {
+        text-align: justify;
+    }
+    p {
+        margin-bottom: .5rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .aboutUs {
-        height: 100vh;
-    }
     .aboutUs__img {
-        min-height: 300px;
+        min-height: 200px;
     }
     .aboutUs__text p {
         font-size: 1rem;

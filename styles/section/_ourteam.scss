@@ -1,18 +1,24 @@
 .ourTeam {
-    min-height: 40vh;
-    background-color: darken($color: #fff, $amount: 5);
-    .card-title, .card_text {
+    min-height: 100vh;
+    background-color: darken($color: #fff, $amount: 10);
+    color: #ffffff;
+    
+    .card-title, .card-text {
         text-align: center;
     }
     .container__team {
         height: 100%;
     }
     .profile__img {
-        width: 150px;
+        width: 120px;
         aspect-ratio: 1 / 1;
+        border-radius: 50%;
     }
     .card-link {
         font-size: .5rem;
+    }
+    a {
+        color: darken($color: $primary, $amount: 10);
     }
     a:hover {
         border-bottom: none;

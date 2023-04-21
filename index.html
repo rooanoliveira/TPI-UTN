@@ -8,9 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/app.js"></script>
     <title>Home - Mente en Calma</title>
 </head>
 <body>
@@ -48,10 +48,17 @@
             </div>
             <div class="aboutUs__img mx-auto my-3"></div>
             <div class="aboutUs__text mx-auto my-3">
-                <p>
-                  En <span>Mente en Calma</span>, nuestra filosofía se basa en la creencia de que el bienestar emocional es esencial para una vida plena y satisfactoria. Nos dedicamos a ofrecer clases y herramientas de mindfulness para ayudarte a encontrar la calma interior y la felicidad que necesitas en tu vida diaria.
-                  Nuestros profesores están altamente capacitados y tienen años de experiencia en la práctica del mindfulness y la meditación. Te guiarán en cada paso de tu camino hacia la atención plena y la serenidad interior, ayudándote a encontrar el equilibrio emocional y la paz interior que necesitas para vivir una vida plena y feliz.
-                </p>
+                <p>En <span>Mente en Calma</span>, nuestra filosofía se basa en la creencia de que el bienestar emocional es esencial para una vida plena y satisfactoria. Nos dedicamos a ofrecer clases y herramientas de mindfulness para ayudarte a encontrar la calma interior y la felicidad que necesitas en tu vida diaria. </p>
+                <p>Nuestros profesores están altamente capacitados y tienen años de experiencia en la práctica del mindfulness y la meditación. Te guiarán en cada paso de tu camino hacia la atención plena y la serenidad interior, ayudándote a encontrar el equilibrio emocional y la paz interior que necesitas para vivir una vida plena y feliz.</p>
+                <p>Creemos que la práctica regular del mindfulness puede ayudarte a mejorar tu bienestar emocional y tu capacidad para lidiar con el estrés y la ansiedad.</p>
+                <p>Nuestras clases están diseñadas para adaptarse a cualquier nivel de experiencia, desde principiantes hasta expertos, y te ofrecemos un ambiente seguro y acogedor para que puedas desarrollar tu práctica a tu ritmo.</p>
+                <p>Además de nuestras clases regulares, también ofrecemos talleres y retiros para aquellos que buscan una experiencia más intensiva de meditación y mindfulness.</p>
+                <p>Valoramos la comunidad y la conexión humana. Creemos que la práctica del mindfulness puede ayudarte a cultivar relaciones más saludables y significativas con los demás.</p>
+                <p>En nuestra empresa, te ofrecemos una variedad de técnicas y herramientas para la práctica del mindfulness, desde la meditación sentada hasta la meditación en movimiento, para que puedas encontrar la que mejor se adapte a tus necesidades y preferencias.</p>
+                <p>Nuestro objetivo es ayudarte a integrar la atención plena en tu vida diaria, para que puedas encontrar la calma y la claridad que necesitas en cualquier momento y en cualquier lugar.</p>
+                <p>También nos tomamos el tiempo para escuchar y responder a las necesidades individuales de cada estudiante, para que puedas recibir la guía y el apoyo que necesitas para alcanzar tus objetivos.</p>
+                <p>Nuestra comunidad de practicantes de mindfulness está comprometida en apoyarte en cada paso de tu camino hacia la atención plena y la felicidad, ofreciéndote un espacio seguro y acogedor donde puedas crecer y aprender.</p></br>
+                <p>En resumen, en <span>Mente en Calma</span> estamos dedicados a ayudarte a encontrar la calma interior y la felicidad que necesitas para vivir una vida plena y satisfactoria. Te invitamos a unirte a nuestra comunidad de practicantes de mindfulness y a descubrir todo lo que podemos ofrecerte para mejorar tu bienestar emocional y mental.</p>
             </div>
         </div>
     </div>
@@ -59,88 +66,49 @@
       <div class="ourTeam_title my-3">
         <h1>Nuestro Time</h1>
     </div>
-      <div class="container__team container-fluid d-flex justify-content-center align-items-center flex-wrap">
-        <div class="card col-sm-12 col-md-4 col-xl-2 m-2 d-flex flex-column justify-content-center align-items-center p-2">
-          <div class="card-img-top d-flex justify-content-center">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png" class="profile__img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">John Doe</h5>
-            <p class="card-text">Project Manager</p>
-          </div>
-          <div class="card-body d-flex">
-            <div class="card-link">
-              <a href="#facebook"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-            </div>
-            <div class="card-link">
-              <a href="#instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            </div>
-            <div class="card-link">
-              <a href="#linkedin"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
-            </div>
-          </div>
+      <div id="card-container" class="container__team container-fluid d-flex justify-content-center align-items-center flex-wrap"></div>
+      <script src="js/ourteam.js"></script>
+    </div>
+    <div class="callToAction d-flex justify-content-center align-items-center">
+      <div class="row container d-flex justify-content-center align-items-center flex-column flex-md-row m-3">
+        <div class="col-12 col-xl-8 my-2">
+          <h3>Subscribate en nuestra Newsletter para recibir informaciones.</h3>
         </div>
-        <div class="card col-sm-12 col-md-4 col-xl-2 m-2 d-flex flex-column justify-content-center align-items-center p-2">
-          <div class="card-img-top d-flex justify-content-center">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png" class="profile__img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">John Doe</h5>
-            <p class="card-text">Project Manager</p>
-          </div>
-          <div class="card-body d-flex">
-            <div class="card-link">
-              <a href="#facebook"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-            </div>
-            <div class="card-link">
-              <a href="#instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            </div>
-            <div class="card-link">
-              <a href="#linkedin"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="card col-sm-12 col-md-4 col-xl-2 m-2 d-flex flex-column justify-content-center align-items-center p-2">
-          <div class="card-img-top d-flex justify-content-center">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png" class="profile__img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">John Doe</h5>
-            <p class="card-text">Project Manager</p>
-          </div>
-          <div class="card-body d-flex">
-            <div class="card-link">
-              <a href="#facebook"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-            </div>
-            <div class="card-link">
-              <a href="#instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            </div>
-            <div class="card-link">
-              <a href="#linkedin"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="card col-sm-12 col-md-4 col-xl-2 m-2 d-flex flex-column justify-content-center align-items-center p-2">
-          <div class="card-img-top d-flex justify-content-center">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png" class="profile__img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">John Doe</h5>
-            <p class="card-text">Project Manager</p>
-          </div>
-          <div class="card-body d-flex">
-            <div class="card-link">
-              <a href="#facebook"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-            </div>
-            <div class="card-link">
-              <a href="#instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            </div>
-            <div class="card-link">
-              <a href="#linkedin"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
-            </div>
+        <div class="col-12 col-xl-4">
+          <div class="newsletter__mail">
+            <form action="submit" method="get">
+              <div class="input-group mb-3 d-flex justify-content-center align-items-center flex-row">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-envelope fa-2xl"></i></span>
+                <input type="email" class="form-control ms-1" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                <div type="button" class="input-group-text button__newsletter ms-1"><i class="fa-solid fa-chevron-right fa-2x"></i></div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
+    </div>
+    <div class="contact">
+      <div class="contact__title text-center py-3">
+        <h5>Alguna Duda?</h5>
+        <h1>Contactanos</h1>
+        <p>Estamos acá para ayudarte y contestar cualquier duda que tengas.</p>
+      </div>
+      <div class="container__contact row container d-flex justify-content-center align-items-center flex-column flex-md-row m-auto">
+        <div class="contact__left col-12 col-xl-4 me-5 p-3">
+          <div class="contact__info">
+            <div class="contact__info__text">Informaciones</div>
+            <hr>
+            <div class="map__container"></div>
+            <div class="address__info">Lorem ipsum dolor sit amet</div>
+            <div class="phone__info">+54 (999) 9999-999</div>
+            <div class="mail__info"><a href="mailto:example@example.com">example@example.com</a></div>
+          </div>
+        </div>
+        <div class="contact__right col-12 col-xl-6">
+          02
+        </div>
+      </div>
+      
     </div>
 </body>
 </html>

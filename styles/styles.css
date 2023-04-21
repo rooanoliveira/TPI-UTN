@@ -1,23 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.aboutUs, .ourTeam {
+  box-shadow: inset 0px 20px 20px -10px rgba(0, 0, 0, 0.4);
+}
+
 span {
   font-weight: bold;
-  color: #63adf2;
+  color: #328077;
   text-transform: uppercase;
 }
 
 a:hover {
-  color: #63adf2 !important;
-  border-bottom: 1px solid #63adf2;
+  color: #328077 !important;
+  border-bottom: 1px solid #328077;
 }
 
 h1 {
-  color: #63adf2;
+  color: #328077;
   font-weight: bold;
 }
 
 .header {
-  background: url(../assets/header-background.jpg) top center no-repeat;
+  background: url(../assets/header-background.jpg) center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -43,6 +56,16 @@ h1 {
   font-weight: bold;
   color: white;
   height: 30vh;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 @media (max-width: 767px) {
@@ -62,25 +85,27 @@ h1 {
   }
 }
 .aboutUs {
-  height: 60vh;
+  min-height: 100vh;
+  background: url(../assets/ondas.svg) whitesmoke bottom center no-repeat;
 }
-
-.aboutUs_title {
+.aboutUs .aboutUs_title {
   text-align: center;
 }
-
-.aboutUs__img {
-  min-height: 300px;
+.aboutUs .aboutUs__img {
+  min-height: 250px;
   background: url(../assets/aboutus.svg) center center no-repeat;
   background-size: contain;
 }
+.aboutUs .aboutUs__text {
+  text-align: justify;
+}
+.aboutUs p {
+  margin-bottom: 0.5rem;
+}
 
 @media (max-width: 768px) {
-  .aboutUs {
-    height: 100vh;
-  }
   .aboutUs__img {
-    min-height: 300px;
+    min-height: 200px;
   }
   .aboutUs__text p {
     font-size: 1rem;
@@ -100,21 +125,26 @@ h1 {
   }
 }
 .ourTeam {
-  min-height: 40vh;
-  background-color: #f2f2f2;
+  min-height: 100vh;
+  background-color: #e6e6e6;
+  color: #ffffff;
 }
-.ourTeam .card-title, .ourTeam .card_text {
+.ourTeam .card-title, .ourTeam .card-text {
   text-align: center;
 }
 .ourTeam .container__team {
   height: 100%;
 }
 .ourTeam .profile__img {
-  width: 150px;
+  width: 120px;
   aspect-ratio: 1/1;
+  border-radius: 50%;
 }
 .ourTeam .card-link {
   font-size: 0.5rem;
+}
+.ourTeam a {
+  color: #245b55;
 }
 .ourTeam a:hover {
   border-bottom: none;
@@ -160,4 +190,41 @@ h1 {
   .ourTeam .card-link {
     font-size: 0.3rem;
   }
+}
+.callToAction {
+  min-height: 10vh;
+  background-color: #00171f;
+  color: #fff;
+  text-align: center;
+}
+.callToAction .input-group-text, .callToAction .form-control {
+  height: 40px;
+  background-clip: unset;
+}
+.callToAction .button__newsletter {
+  background-color: #328077;
+  color: #fff;
+  border: unset;
+}
+
+.contact {
+  min-height: 90vh;
+  background-color: #f7f8fc;
+}
+.contact .contact__title {
+  background-color: #fff;
+  min-height: 15vh;
+}
+.contact .container__contact {
+  min-height: 75vh;
+}
+.contact .contact__left {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.contact .map__container {
+  width: 400px;
+  height: 400px;
+  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=40.712776,-74.005974&zoom=12&size=500x500&maptype=roadmap&key=AIzaSyCnIfK1fkE7E3lnXLf0Z_XHJ-1aws0xzLE");
 }/*# sourceMappingURL=styles.css.map */

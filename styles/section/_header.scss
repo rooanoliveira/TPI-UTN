@@ -1,6 +1,7 @@
 .header {
-    background: url(../assets/header-background.jpg) top center no-repeat;
+    background: url(../assets/header-background.jpg) center center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 .navbar-brand {
@@ -16,13 +17,22 @@
     font-size: 20px;
 }
 #typedtext {
-    // font-family: 'Waiting for the Sunrise', cursive; 
-    font-size:3rem; 
-    margin: 10px 50px; 
-    letter-spacing: 6px; 
+    font-size: 3rem;
+    margin: 10px 50px;
+    letter-spacing: 6px;
     font-weight: bold;
     color: white;
     height: 30vh;
+    text-shadow: 2px 2px 8px #000;
+}
+.navbar {
+    // position: fixed;
+    // width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, .9);
 }
 @media (max-width: 767px) {
     #typedtext {

@@ -1,0 +1,15 @@
+.callToAction {
+    min-height: 10vh;
+    background-color: $black;
+    color: #fff;
+    text-align: center;
+    .input-group-text, .form-control {
+        height: 40px;
+        background-clip: unset;
+    }
+    .button__newsletter {
+        background-color: $primary;
+        color: #fff;
+        border: unset;
+    }
+}
