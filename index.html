@@ -27,10 +27,10 @@
                   <a class="nav-link" href="#">Quienes somos</a>
                 </li>
                 <li class="nav-item p-2">
-                  <a class="nav-link" href="#">Cómo funciona</a>
+                  <a class="nav-link" href="#">Nuestro Time</a>
                 </li>
                 <li class="nav-item p-2">
-                  <a class="nav-link" href="#">FAQS</a>
+                  <a class="nav-link" href="#">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -94,7 +94,7 @@
         <p>Estamos acá para ayudarte y contestar cualquier duda que tengas.</p>
       </div>
       <div class="container__contact row container d-flex justify-content-center align-items-center flex-column flex-md-row m-auto">
-        <div class="contact__left col-12 col-xl-4 p-1 p-md-3 my-3 m-auto">
+        <div class="contact__left col-12 col-xl-4 p-2 p-md-3 my-3 m-auto">
           <div class="contact__info">
             <div class="contact__info__text text-center"><h4>Informaciones</h4></div>
             <hr>
@@ -105,7 +105,7 @@
             <div class="mail__info d-flex"><div class="contact__icon mx-2"><i class="fa-regular fa-envelope"></i></div><a href="mailto:example@example.com">example@example.com</a></div>
           </div>
         </div>
-        <div class="contact__right col-12 col-xl-7 p-1 p-md-3 my-3 m-auto">
+        <div class="contact__right col-12 col-xl-7 p-2 p-md-3 my-3 m-auto">
           <form class="container" id="contactForm" name="contactForm" method="post">
             <div class="form-floating mb-3">
               <input type="text" class="form-control" id="inputName" placeholder="Nombre y Apellido">
@@ -122,11 +122,39 @@
               <textarea class="form-control" placeholder="Mensaje" id="inputMessage"></textarea>
               <label for="inputMessage">Mensaje</label>
             </div>
-            <button type="submit" id="submitbtn" value="Submit" class="login__button btn btn-primary col-10 offset-1">Create</button>
+            <button type="submit" id="contactSubmit" value="Submit" class="contact__submit px-4 float-end float-md-start"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
           </form>
         </div>
       </div>
-      
     </div>
+    <footer>
+      <div class="row container m-auto">
+        <div class="col-3">
+          <div class="footer__logo"></div>
+        </div>
+        <div class="footer__menu col-3 my-3 d-flex justify-content-center flex-column">
+          <a href="#">Quienes Somos</a>
+          <a href="#">Nuestro Time</a>
+          <a href="#">Contacto</a>
+        </div>
+        <div class="footer__menu col-3 my-3 d-flex justify-content-center flex-column">
+          <a href="#">Termos y condiciones</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Política de cookies</a>
+        </div>
+        <div class="col-3 my-3 d-flex justify-content-center align-items-center flex-column">
+          <div class="social__icons d-flex">
+          <div class="social__icon m-2"><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></div>
+          <div class="social__icon m-2"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></div>
+          <div class="social__icon m-2"><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></div>
+          <div class="social__icon m-2"><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <hr class="container">
+      <div class="row container footerCopyright col-12 text-center text-white m-auto">
+        <p>&copy; 2023 Todos los derechos reservados - <strong> Mente en Calma</strong></p>
+      </div>
+    </footer>
 </body>
 </html>

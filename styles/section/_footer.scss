@@ -1,0 +1,20 @@
+footer {
+    height: 30vh;
+    .footer__logo {
+        width: 200px;
+        aspect-ratio: 1 /1;
+        background: url(../assets/Logo_Mente_En_Calma_Blanco.png) center center no-repeat;
+        background-size: cover;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $gray;
+    }
+    a:hover {
+        border-bottom: none;
+    }
+    hr {
+        color: $gray;
+    }
+}

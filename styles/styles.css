@@ -243,6 +243,17 @@ a.navbar-brand {
   min-height: 60px;
   max-height: 350px;
 }
+.contact .contact__submit {
+  background-color: #328077;
+  color: #fff;
+  border: unset;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+.contact .contact__submit:hover {
+  background-color: #245b55;
+}
 
 @media (max-width: 767px) {
   .contact .map__container {
@@ -255,4 +266,24 @@ a.navbar-brand {
     width: 200px;
     height: 200px;
   }
+}
+footer {
+  height: 30vh;
+}
+footer .footer__logo {
+  width: 200px;
+  aspect-ratio: 1/1;
+  background: url(../assets/Logo_Mente_En_Calma_Blanco.png) center center no-repeat;
+  background-size: cover;
+}
+footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #637081;
+}
+footer a:hover {
+  border-bottom: none;
+}
+footer hr {
+  color: #637081;
 }/*# sourceMappingURL=styles.css.map */

@@ -24,6 +24,17 @@
         min-height: 60px;
         max-height: 350px;
     }
+    .contact__submit {
+        background-color: $primary;
+        color: #fff;
+        border: unset;
+        border-radius: 5px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    .contact__submit:hover {
+        background-color: darken($color: $primary, $amount: 10);
+    }
 }
 
 @media (max-width: 767px) {
