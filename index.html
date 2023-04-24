@@ -14,23 +14,23 @@
     <title>Home - Mente en Calma</title>
 </head>
 <body>
-    <div class="header d-flex flex-column">
+    <div id="home" class="header d-flex flex-column">
         <nav class="navbar navbar-expand-md navbar-dark sticky-top col-12">
           <div class="container">
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#home"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item p-2">
-                  <a class="nav-link" href="#">Quienes somos</a>
+                  <a class="nav-link" href="#aboutUs">Quienes somos</a>
                 </li>
                 <li class="nav-item p-2">
-                  <a class="nav-link" href="#">Nuestro Time</a>
+                  <a class="nav-link" href="#ourTeam">Nuestro Time</a>
                 </li>
                 <li class="nav-item p-2">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link" href="#contact">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -41,7 +41,7 @@
         <script src="js/typewriter.js"></script>
         </div>
     </div>
-      <div class="aboutUs d-flex justify-content-evenly align-items-center">
+      <div id="aboutUs" class="aboutUs d-flex justify-content-evenly align-items-center">
         <div class="row container">
             <div class="aboutUs_title my-3">
                 <h1>Quienes Somos</h1>
@@ -62,33 +62,33 @@
             </div>
         </div>
     </div>
-    <div class="ourTeam d-flex justify-content-evenly align-items-center flex-column">
+    <div id="ourTeam" class="ourTeam d-flex justify-content-evenly align-items-center flex-column">
       <div class="ourTeam_title my-3">
         <h1>Nuestro Time</h1>
     </div>
       <div id="card-container" class="container__team container-fluid d-flex justify-content-center align-items-center flex-wrap"></div>
       <script src="js/ourteam.js"></script>
     </div>
-    <div class="callToAction d-flex justify-content-center align-items-center">
+    <div id="callToAction" class="callToAction d-flex justify-content-center align-items-center">
       <div class="row container d-flex justify-content-center align-items-center flex-column flex-md-row m-3">
         <div class="col-12 col-xl-8 my-2">
           <h3>Subscribate en nuestra Newsletter para recibir informaciones.</h3>
         </div>
         <div class="col-12 col-xl-4">
           <div class="newsletter__mail">
-            <form action="submit" method="get">
+            <form id="newsletterForm" method="post">
               <div class="input-group mb-3 d-flex justify-content-center align-items-center flex-row">
                 <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-envelope fa-2xl"></i></span>
-                <input type="email" class="form-control ms-1" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-                <div type="button" class="input-group-text button__newsletter ms-1"><i class="fa-solid fa-chevron-right fa-2x"></i></div>
+                <input id="emailNewsletter" type="email" class="form-control ms-1" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                <button type="submit" class="input-group-text button__newsletter ms-1"><i class="fa-solid fa-chevron-right fa-2x"></i></button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="contact">
-      <div class="contact__title text-center p-3">
+    <div id="contact" class="contact">
+      <div class="contact__title text-center d-flex justify-content-center align-items-center flex-column px-2">
         <h5>Alguna Duda?</h5>
         <h1>Contactanos</h1>
         <p>Estamos acá para ayudarte y contestar cualquier duda que tengas.</p>
@@ -100,9 +100,9 @@
             <hr>
             <div class="map__container m-auto"></div>
             <hr>
-            <div class="address__info d-flex"><div class="contact__icon mx-2"><i class="fa-solid fa-location-dot"></i></div><p>Lorem ipsum dolor sit amet</p></div>
-            <div class="phone__info d-flex"><div class="contact__icon mx-2"><i class="fa-solid fa-phone"></i></div><p>+54 (999) 9999-999</p></div>
-            <div class="mail__info d-flex"><div class="contact__icon mx-2"><i class="fa-regular fa-envelope"></i></div><a href="mailto:example@example.com">example@example.com</a></div>
+            <div class="address__info d-flex"><div class="contact__icon mx-2"><i class="fa-solid fa-location-dot"></i></div><p>C.A.B.A. - Buenos Aires - Argentina</p></div>
+            <div class="phone__info d-flex"><div class="contact__icon mx-2"><i class="fa-solid fa-phone"></i></div><p>+54 (11) 9999-999</p></div>
+            <div class="mail__info d-flex"><div class="contact__icon mx-2"><i class="fa-regular fa-envelope"></i></div><a href="mailto:contacto@menteencalma.ar">contacto@menteencalma.ar</a></div>
           </div>
         </div>
         <div class="contact__right col-12 col-xl-7 p-2 p-md-3 my-3 m-auto">
@@ -112,42 +112,45 @@
               <label for="inputName">Nombre y Apellido</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="inputMail" placeholder="email@exemplo.com">
+              <input type="email" class="form-control" id="inputMail" placeholder="email@ejemplo.com">
               <label for="inputMail">Correo Electrónico</label></div>
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="inputPhone" placeholder="(99) 9999-999">
-              <label for="inputPhone">Teléfono</label>
-            </div>
             <div class="form-floating mb-3">
               <textarea class="form-control" placeholder="Mensaje" id="inputMessage"></textarea>
               <label for="inputMessage">Mensaje</label>
             </div>
-            <button type="submit" id="contactSubmit" value="Submit" class="contact__submit px-4 float-end float-md-start"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+            <div class="row container">
+              <div class="helpBlock col-sm-12 col-md-8 m-auto my-2">
+                <div class="helpNameBlock d-none"><i class="fa-solid fa-triangle-exclamation"></i> El nombre debe contener por lo menos 4 dígitos!</div>
+                <div class="helpMailBlock d-none"><i class="fa-solid fa-triangle-exclamation"></i> Digite un mail válido. ej: ejemplo@ejemplo.com !</div>
+                <div class="helpMessageBlock d-none"><i class="fa-solid fa-triangle-exclamation"></i> El mensaje debe contener por lo menos 10 dígitos!</div>
+              </div>
+              <button type="submit" id="contactSubmit" class="contact__submit px-4 float-end col-sm-12 col-md-4 m-auto my-2"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+            </div>
           </form>
         </div>
       </div>
     </div>
     <footer>
-      <div class="row container m-auto">
-        <div class="col-3">
-          <div class="footer__logo"></div>
+      <div class="row container m-auto justify-content-center align-items-center">
+        <div class="col-sm-10 col-md-3 m-auto d-flex justify-content-center align-items-center">
+          <a href="#home"><div class="footer__logo"></div></a>
         </div>
-        <div class="footer__menu col-3 my-3 d-flex justify-content-center flex-column">
-          <a href="#">Quienes Somos</a>
-          <a href="#">Nuestro Time</a>
-          <a href="#">Contacto</a>
+        <div class="footer__menu col-sm-5 col-md-4 col-xl-3 my-3 d-flex justify-content-center flex-column text-center">
+          <a href="#aboutUs">Quienes Somos</a>
+          <a href="#ourTeam">Nuestro Time</a>
+          <a href="#contact">Contacto</a>
         </div>
-        <div class="footer__menu col-3 my-3 d-flex justify-content-center flex-column">
+        <div class="footer__menu col-sm-5 col-md-4 col-xl-3 my-3 d-flex justify-content-center flex-column text-center">
           <a href="#">Termos y condiciones</a>
           <a href="#">Política de privacidad</a>
           <a href="#">Política de cookies</a>
         </div>
-        <div class="col-3 my-3 d-flex justify-content-center align-items-center flex-column">
+        <div class="col-sm-10 col-md-3 my-3 d-flex justify-content-center align-items-center flex-column">
           <div class="social__icons d-flex">
-          <div class="social__icon m-2"><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></div>
-          <div class="social__icon m-2"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></div>
-          <div class="social__icon m-2"><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></div>
-          <div class="social__icon m-2"><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></div>
+          <div class="social__icon m-2"><a href="#facebook"><i class="fa-brands fa-square-facebook fa-2x"></i></a></div>
+          <div class="social__icon m-2"><a href="#twitter"><i class="fa-brands fa-twitter fa-2x"></i></a></div>
+          <div class="social__icon m-2"><a href="#instagram"><i class="fa-brands fa-instagram fa-2x"></i></a></div>
+          <div class="social__icon m-2"><a href="#linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a></div>
           </div>
         </div>
       </div>
