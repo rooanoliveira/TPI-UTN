@@ -31,6 +31,9 @@
     background-color: transparent;
     transition: background-color 0.3s ease;
 }
+a.navbar-brand {
+    border-bottom: none;
+}
 .navbar-scrolled {
     background-color: rgba(0, 0, 0, .9);
 }

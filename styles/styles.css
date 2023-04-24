@@ -25,6 +25,12 @@ a:hover {
 h1 {
   color: #328077;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+h4, h5 {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .header {
@@ -62,6 +68,10 @@ h1 {
 .navbar {
   background-color: transparent;
   transition: background-color 0.3s ease;
+}
+
+a.navbar-brand {
+  border-bottom: none;
 }
 
 .navbar-scrolled {
@@ -152,7 +162,6 @@ h1 {
 .ourTeam .card {
   --bs-card-border-color: none;
   border-radius: 10px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
@@ -220,11 +229,30 @@ h1 {
 }
 .contact .contact__left {
   background-color: #fff;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .contact .map__container {
   width: 400px;
   height: 400px;
   background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=40.712776,-74.005974&zoom=12&size=500x500&maptype=roadmap&key=AIzaSyCnIfK1fkE7E3lnXLf0Z_XHJ-1aws0xzLE");
+}
+.contact #inputMessage {
+  resize: vertical;
+  height: 350px;
+  min-height: 60px;
+  max-height: 350px;
+}
+
+@media (max-width: 767px) {
+  .contact .map__container {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (max-width: 376px) {
+  .contact .map__container {
+    width: 200px;
+    height: 200px;
+  }
 }/*# sourceMappingURL=styles.css.map */

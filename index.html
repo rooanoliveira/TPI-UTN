@@ -88,24 +88,42 @@
       </div>
     </div>
     <div class="contact">
-      <div class="contact__title text-center py-3">
+      <div class="contact__title text-center p-3">
         <h5>Alguna Duda?</h5>
         <h1>Contactanos</h1>
         <p>Estamos acá para ayudarte y contestar cualquier duda que tengas.</p>
       </div>
       <div class="container__contact row container d-flex justify-content-center align-items-center flex-column flex-md-row m-auto">
-        <div class="contact__left col-12 col-xl-4 me-5 p-3">
+        <div class="contact__left col-12 col-xl-4 p-1 p-md-3 my-3 m-auto">
           <div class="contact__info">
-            <div class="contact__info__text">Informaciones</div>
+            <div class="contact__info__text text-center"><h4>Informaciones</h4></div>
             <hr>
-            <div class="map__container"></div>
-            <div class="address__info">Lorem ipsum dolor sit amet</div>
-            <div class="phone__info">+54 (999) 9999-999</div>
-            <div class="mail__info"><a href="mailto:example@example.com">example@example.com</a></div>
+            <div class="map__container m-auto"></div>
+            <hr>
+            <div class="address__info d-flex"><div class="contact__icon mx-2"><i class="fa-solid fa-location-dot"></i></div><p>Lorem ipsum dolor sit amet</p></div>
+            <div class="phone__info d-flex"><div class="contact__icon mx-2"><i class="fa-solid fa-phone"></i></div><p>+54 (999) 9999-999</p></div>
+            <div class="mail__info d-flex"><div class="contact__icon mx-2"><i class="fa-regular fa-envelope"></i></div><a href="mailto:example@example.com">example@example.com</a></div>
           </div>
         </div>
-        <div class="contact__right col-12 col-xl-6">
-          02
+        <div class="contact__right col-12 col-xl-7 p-1 p-md-3 my-3 m-auto">
+          <form class="container" id="contactForm" name="contactForm" method="post">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="inputName" placeholder="Nombre y Apellido">
+              <label for="inputName">Nombre y Apellido</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="inputMail" placeholder="email@exemplo.com">
+              <label for="inputMail">Correo Electrónico</label></div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="inputPhone" placeholder="(99) 9999-999">
+              <label for="inputPhone">Teléfono</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Mensaje" id="inputMessage"></textarea>
+              <label for="inputMessage">Mensaje</label>
+            </div>
+            <button type="submit" id="submitbtn" value="Submit" class="login__button btn btn-primary col-10 offset-1">Create</button>
+          </form>
         </div>
       </div>
       

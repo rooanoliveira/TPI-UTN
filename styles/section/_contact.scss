@@ -10,12 +10,35 @@
     }
     .contact__left {
         background-color: #fff;
-        border-radius: 1rem;
+        border-radius: .75rem;
         box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1);
     }
     .map__container {
         width: 400px;
         height: 400px;
         background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=40.712776,-74.005974&zoom=12&size=500x500&maptype=roadmap&key=AIzaSyCnIfK1fkE7E3lnXLf0Z_XHJ-1aws0xzLE');
+    }
+    #inputMessage {
+        resize: vertical;
+        height: 350px;
+        min-height: 60px;
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact {
+        .map__container {
+            width: 320px;
+            height: 320px;
+        }
+    }
+}
+@media (max-width: 376px) {
+    .contact {
+        .map__container {
+            width: 200px;
+            height: 200px;
+        }
     }
 }

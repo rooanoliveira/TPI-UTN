@@ -22,5 +22,9 @@ a:hover {
 h1 {
     color: $primary;
     font-weight: bold;
-    // text-transform: uppercase;
+    text-transform: uppercase;
+}
+h4, h5 {
+    font-weight: bold;
+    text-transform: uppercase;
 }
