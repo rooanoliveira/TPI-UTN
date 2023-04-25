@@ -96,7 +96,8 @@ a.navbar-brand {
 }
 .aboutUs {
   min-height: 100vh;
-  background: url(../assets/ondas.svg) whitesmoke bottom center no-repeat;
+  background: url(../assets/wave.svg) whitesmoke bottom center no-repeat;
+  background-size: cover;
 }
 .aboutUs .aboutUs_title {
   text-align: center;
