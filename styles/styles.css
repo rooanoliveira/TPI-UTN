@@ -234,8 +234,8 @@ a.navbar-brand {
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .contact .map__container {
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 320px;
   background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=-34.6063489,-58.3863351&zoom=12&size=500x500&maptype=roadmap&key=AIzaSyCnIfK1fkE7E3lnXLf0Z_XHJ-1aws0xzLE");
 }
 .contact .contact__icon {
